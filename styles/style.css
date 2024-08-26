@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --azul-hover: #609ed4;
+    --azul-escuro3: #0a3781;
+    --azul-claro1: #f3f5fc;
+    --cinza4: #495057;
+    --cinza4: #343A40;
+}
+
+body{
+    background: var(--azul-claro1);
+}
+
+textarea{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.io-icon{
+    color: var(--azul-escuro3);
+}
+.cabecalho{
+    width: 90%;
+    margin: auto;
+}
+
+.cabecalho__logo{
+    margin-top: 40px;
+}
+
+.apresentacao{
+    width: 80.5%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 91px - 72px);
+    align-items: end;
+}
+
+.apresentacao__esquerda{
+    background-color: var(--azul-claro1);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.apresentacao__input__texto{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    width: 80%;
+    font-size: 32px;
+    color: var(--azul-escuro3);
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.apresentacao__input__texto::placeholder{
+    color: var(--azul-escuro3);
+}
+
+.apresentacao__esquerda__rodape__aviso{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mensagem__informacao__esquerda{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--cinza4);
+}
+
+.apresentacao__esquerda__botoes{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.botao__criptografar, .botao__descriptografar, .botao__copiar{
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border: 1px var(--azul-escuro3) solid;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.botao__criptografar{
+    background-color: var(--azul-escuro3);
+    color: white;
+}
+
+.botao__descriptografar{
+    background-color: #d8dfe8;
+    color: var(--azul-escuro3);
+}
+
+.apresentacao__direita{
+    background-color: white;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.apresentacao__direita.apresentacao__direita__ajustar{
+    justify-content: space-between;
+}
+
+.imagem__personagem{
+    width: 100%;
+}
+
+.oculto{
+    display: none;
+}
+
+.mensagem__final{
+    background-color: none;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    color: var(--cinza4);
+}
+
+.mensagem__final.mensagem__final__ajustar{
+    text-align: left;
+    font-weight: 400;
+    height: 70%;
+    color: var(--cinza4);
+}
+
+.mensagem__informacao__direita{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cinza4);
+    text-align: center;
+}
+
+.botao__copiar{
+    display: none;
+    width: 100%;
+    background-color: transparent;
+    color: var(--azul-escuro3);
+}
+
+.rodape{
+    width: auto;
+    margin: 45px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.rodape__links{
+    color: var(--azul-escuro3);
+}
+
+.rodape__links:hover{
+    color: var(--azul-hover);
+}
+
+@media screen and (max-width: 800px){
+    .apresentacao{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+        gap: 64px;
+    }
+
+    .apresentacao__esquerda__botoes{
+        justify-content: center;
+    }
+
+    .botao__criptografar, .botao__descriptografar, .botao__copiar{
+        width: 45%;
+    }
+
+    .apresentacao__direita{
+        height: 100%;
+    }
+
+    .imagem__personagem{
+        display: none;
+    }
+    .rodape{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .botao__criptografar, .botao__descriptografar, .botao__copiar{
+        max-width: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img class="cabecalho__logo" src="./assets/logo_alura_novo.svg" alt="Logo da alura.">
+        </div>
+    </header>
+
+    <main>
+        <div class="apresentacao">
+            <div class="apresentacao__esquerda">
+                <textarea id="inputTexto" class="apresentacao__input__texto" placeholder="Digite seu texto"></textarea>
+                <div class="apresentacao__esquerda__rodape">
+                    <div class="apresentacao__esquerda__rodape__aviso">
+                        <img src="./assets/exclamacao.svg" alt="Símbolo de exclamação.">
+                        <span class="mensagem__informacao__esquerda">Apenas letras minúsculas e sem acento.</span>    
+                    </div>
+                    <div class="apresentacao__esquerda__botoes">
+                        <button id="botaoCriptografar"  class="botao__criptografar">Criptografar</button>
+                        <button id="botaoDescriptografar" class="botao__descriptografar">Descriptografar</button>
+                    </div> 
+                </div>   
+            </div>
+    
+            <div id="apresentacaoDireita" class="apresentacao__direita">
+                <img id="imagemPersonagem" class="imagem__personagem" src="./assets/imagem_personagem.svg" alt="Personagem com uma lupa.">
+                <!-- <div>
+                </div> -->
+                <textarea id="mensagemFinal" class="mensagem__final" placeholder="Nenhuma mensagem encontrada"></textarea>
+                <p id="informacaoDireita" class="mensagem__informacao__direita">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button id="botaoCopiar" class="botao__copiar">
+                    Copiar
+                </button>
+            </div>    
+        </div>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <div>
+                <a href="https://github.com/JoseASandes"><ion-icon class="rodape__links" name="logo-github"></ion-icon></a>
+                <a href="https://www.instagram.com/josea.sandes/"><ion-icon class="rodape__links" name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/josé-antônio-sandes-0855631ba/"><ion-icon class="rodape__links" name="logo-linkedin"></ion-icon></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
